@@ -1,0 +1,32 @@
+/*폰트*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* ===================================
+    Reset 초기화
+====================================== */
+
+body{letter-spacing: 0;font-family: 'Noto Sans KR', sans-serif, Apple-Gothic , Dotum ; -webkit-font-smoothing: antialiased;  -font-smoothing: antialiased;  color:#111; font-weight:300;line-height: 1.4; margin:0; padding:0; box-sizing: border-box;}
+body, html {font-size:16px;height: 100%; -moz-osx-font-smoothing: grayscale;}
+a, a:active, a:focus {color:#000;text-decoration: none; }
+a:hover, a:active{text-decoration: none;}
+a:focus, a:active, button:focus, button:active,.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: none;}
+img {max-width:100%; height:auto; }
+input[type="submit"] { width: auto}
+input[type="button"], input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea, input[type="submit"] { -webkit-appearance: none; outline: none;}
+input:focus, textarea:focus{ border-color: #585858; outline: none; }
+input[type="button"]:focus{ outline: none; }
+select::-ms-expand{ display:none;}
+iframe { border: 0;}
+p {margin:0;}
+b, strong { font-weight: 600;}
+ul, li {list-style: none; margin: 0; padding:0;}
+br {font-family: 'Noto Sans KR', sans-serif;}
+th {font-weight: normal;}
+/* span{vertical-align: middle;} */
+
+::-webkit-input-placeholder { color: #6f6f6f; text-overflow: ellipsis;}
+::-moz-placeholder { color: #6f6f6f; text-overflow: ellipsis; opacity:1;} 
+::-ms-input-placeholder { color: #6f6f6f; text-overflow: ellipsis; opacity:1;}
+
+
+.section{padding: 130px 0;}
+.container{max-width: 1400px;margin: auto;}

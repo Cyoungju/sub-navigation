@@ -1,0 +1,31 @@
+#lnb{display: none;}
+
+#subnav{border-top:1px solid #eee;border-bottom:1px solid #eee}
+#subnav .container > ul {display: flex;font-size:1.125rem;} 
+#subnav .home{width: 60px;height:60px;background-color: #000000;display: flex;justify-content: center;align-items: center;}
+#subnav .home img{justify-self: center;align-self: center;}
+#subnav .sbox{position:relative;top:0;left: 0;}
+#subnav .sbox > a{line-height: 20px;padding: 20px;display: block;position: relative;top: 0;left: 0;color: #666666;}
+#subnav .sbox > a:after {display: block;content: "";clear: both;width: 5px;height: 12px;background-image: url(/img/sub/snav_arrow_r.png);background-position: center;background-repeat: no-repeat;background-size: 100%;right: -2px;position: absolute;top: 50%;transform: translateY(-50%);}
+#subnav .sbox:last-child > a:after {display: block;content: "";clear: both;position: absolute;top: 50%;right: 0;width: 15px;height: 15px;transform: translateY(-50%);background-repeat: no-repeat;background-position: center;background-size: 100%;background-image: url(/img/sub/snav_arrow.png);}
+#subnav .sbox > ul {display: none;position: absolute;top: 100%;left: 0;width: 200px;margin-top: 1px;z-index: 10;box-shadow: 0 0 8px 3px rgba(0,0,0,0.05);}
+#subnav .sbox.on > ul {display: block;}
+#subnav .sbox > ul a{display: block;padding:12px 15px;background: #666666;color: #fff;font-size: 1rem;}
+
+
+@media (max-width: 1440px) {
+    #subnav .container{width: 100%;}
+}
+
+@media (max-width: 768px) {
+    #subnav .home{width:50px;height:50px;}
+    #subnav .home img {height: 18px;}
+    #subnav .sbox > a {padding: 15px 18px;}  
+}
+
+
+@media (max-width: 500px) {
+    
+    #subnav .sbox.s01 > a, #subnav .sbox.s02 > a {padding: 15px 10px;}
+    #subnav .sbox:last-child > a {padding: 15px 16px;}
+}

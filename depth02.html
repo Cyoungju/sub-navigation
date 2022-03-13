@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+    <title>Document</title>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./js/script.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+    
+</head>
+<body>
+    <ul class="nav-menu-ul" id="lnb">
+        <li class="menu menu01 dropdown">
+            <a href="#" class="depth01 void_link"><span>메뉴1-1</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+            <ul class="depth02 dropdown-menu">
+                <li class="nav01"><a href="">메뉴2-1</a></li>
+                <li class="nav02"><a href="">메뉴2-2</a></li>
+            </ul>
+        </li>
+
+        <li class="menu menu02 dropdown">
+            <a href="#" class="depth01 void_link"><span>메뉴1-2</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+            <ul class="depth02 dropdown-menu">
+                <li class="nav01 dropdown">
+                    <a href="">메뉴2-1</a>
+                    <ul class="depth03 dropdown-menu">
+                        <li><a href="/depth03.html">메뉴3-1</a></li>
+                        <li><a href="">메뉴3-2</a></li>
+                        <li><a href="">메뉴3-2</a></li>
+                    </ul>
+                </li>
+                <li class="nav02"><a href="">메뉴2-2</a></li>
+            </ul>
+        </li>
+
+        <li class="menu menu03 dropdown">
+            <a href="#" class="depth01 void_link"><span>메뉴1-3</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+            <ul class="depth02 dropdown-menu">
+                <li class="nav01"><a href="/depth02.html">메뉴2-1</a></li>
+                <li class="nav02"><a href="">메뉴2-2</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="sub">
+        <div class="sub_menu" id="subnav">
+            <div class="container"></div>		
+        </div>
+    </div>
+
+    
+</body>
+</html>
