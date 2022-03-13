@@ -23,6 +23,19 @@ for (let i = 1; i <= depth01NavSize; i++) {
 
 
 var pgurl = window.location.pathname;
+var urlsplit = pgurl.split('/');
+
+
+var urlresult1 = urlsplit[1]; //1차메뉴
+var urlresult2 = urlsplit[2]; //2차메뉴
+var urlresult3 = urlsplit[3]; //3차메뉴
+
+$(document).ready(function(){
+    $('.sub').addClass(urlresult1);
+    $('.sub').addClass(urlresult2);
+    $('.sub').addClass(urlresult3);
+})
+
 
 var mn = '';
 var sn = '';
@@ -42,7 +55,7 @@ $("#lnb li a").each(function () {
             mn = $(this).parents('.menu').attr('data-num');  
         }
     }
-    // } else if($(this).attr("href") == "/"+urlresult1){ //게시판
+    // } else if($(this).attr("href") == "/"+urlresult1){ //그누보드 게시판
     //     if($('.sub.board').length > 0){
     //         sn = $(this).parent('li').attr('data-num');       
     //         mn = $(this).parents('.menu').attr('data-num');
